@@ -12,9 +12,9 @@
     <!--<h2>Query string value: <%= Qstr %></h2>-->
     <h2>Mensaje: <%= Message %> </h2>
 
-    <% switch(Message){
+    <% switch(Message){ <!-- Render de los datos correspondientes escritos en la url -->
         case "Hola": %>
-            <% for (let i = 0; i < Times; i++) { %>
+            <% for (let i = 0; i < Times; i++) { %> <!-- Numero de veces que se repetiran los datos -->
                 <p>Hola <%= ID %></p>
             <% } 
             break;
